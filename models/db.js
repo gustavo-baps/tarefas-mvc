@@ -1,4 +1,4 @@
-class DataBase {
+class Database {
     /**
      * metodo responSavel pela conexão com o banco de dados
      */
