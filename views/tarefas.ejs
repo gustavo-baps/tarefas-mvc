@@ -8,7 +8,7 @@
     <ul> 
         <% tarefas.forEach(tarefa => { %> <li><%= tarefa.title %></li> <% }); %> 
     </ul> 
-    <form action="/tarefas" method="POST"> 
+    <form action="/tarefa" method="POST"> 
         <input type="text" name="title" placeholder="Nova Tarefa"> 
         <button type="submit">Adicionar</button> 
     </form> 
