@@ -12,7 +12,10 @@ app.get('/', (req, res)=>{
 });
 app.use(express.urlencoded({ extended: true })); 
 app.get('/tarefas', tarefaController.getTarefas); 
-app.post('/tarefa', tarefaController.addTarefa); 
+app.post('/tarefa', tarefaController.addTarefa);
+app.delete('/tarefa',tarefaController.addTarefa); 
+app.put('/tarefa',tarefaController.addTarefa); 
+app.get('/tarefa',tarefaController.addTarefa); 
 app.listen(port, () => { 
     console.log(`Servidor rodando em http://localhost:${port}`);
 });
